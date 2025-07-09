@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Honda Car Showroom - Drive the Future</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header id="mainHeader">
+    <div class="logo">Honda</div>
+    <nav>
+      <ul id="navLinks">
+        <li><a href="#models">Models</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#finance">Finance</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="toggleDark">🌙</button></li>
+      </ul>
+      <div id="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="zoom-in">
+    <div class="hero-carousel">
+      <div class="carousel-item active">
+        <img src="images/hero.jpg" alt="Honda City" loading="lazy">
+        <div class="hero-text">
+          <h1>Experience the Drive of Excellence</h1>
+          <p>Explore the latest Honda models crafted for performance and comfort</p>
+          <a href="#models" class="btn">Browse Cars</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/elevate-hero.jpg" alt="Honda Elevate" loading="lazy">
+        <div class="hero-text">
+          <h1>Elevate Your Adventures</h1>
+          <p>Discover the bold and muscular Honda Elevate, designed for every journey.</p>
+          <a href="#models" class="btn">Explore Elevate</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/city-hybrid-hero.jpg" alt="Honda City Hybrid" loading="lazy">
+        <div class="hero-text">
+          <h1>Future of Driving: City Hybrid</h1>
+          <p>Embrace efficiency and innovation with the self-charging Honda City Hybrid.</p>
+          <a href="#models" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <button class="prev"></button>
+      <button class="next"></button>
+    </div>
+    
+  </section>
+
+  <section id="featured-cars" class="models-section">
+    <h2 data-aos="fade-up">Featured Cars</h2>
+    <div class="card-container" id="featuredCarList">
+      <div class="car-card" data-type="sedan" data-aos="fade-up">
+        <img src="images/city.jpg" alt="City" loading="lazy">
+        <h3>Honda City</h3>
+        <div class="car-details">
+          <p><strong>Engine:</strong> 1.5L i-VTEC Petrol</p>
+          <p><strong>Mileage:</strong> 17.8 - 18.4 kmpl</p>
+          <p><strong>Power:</strong> 119.35 bhp</p>
+          <p><strong>Transmission:</strong> Manual/CVT</p>
+          <p><strong>Seating:</strong> 5 Seater</p>
+          <p>A perfect blend of style and performance for the urban jungle, now with enhanced safety features.</p>
+          <p class="price">Starting from: ₹ 11.82 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-aos="fade-up">
+        <img src="images/elevate.jpg" alt="Elevate" loading="lazy">
+        <h3>Honda Elevate</h3>
+        <div class="car-details">
+          <p><strong>Engine:</strong> 1.5L i-VTEC Petrol</p>
+          <p><strong>Mileage:</strong> 15.31 - 16.92 kmpl</p>
+          <p><strong>Power:</strong> 119 bhp</p>
+          <p><strong>Transmission:</strong> Manual/CVT</p>
+          <p><strong>Boot Space:</strong> 458 Liters</p>
+          <p>A bold and muscular SUV for all your adventures, featuring advanced connectivity and comfort.</p>
+          <p class="price">Starting from: ₹ 11.58 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="sedan" data-aos="fade-up">
+        <img src="images/amaze.jpg" alt="Amaze" loading="lazy">
+        <h3>Honda Amaze</h3>
+        <div class="car-details">
+          <p><strong>Engine:</strong> 1.2L i-VTEC Petrol</p>
+          <p><strong>Mileage:</strong> 18.6 - 19.46 kmpl</p>
+          <p><strong>Power:</strong> 89 bhp</p>
+          <p><strong>Transmission:</strong> Manual/CVT</p>
+          <p><strong>Key Features:</strong> Digipad 2.0, Cruise Control</p>
+          <p>Amaze your journeys with this compact and classy sedan, offering surprising space and fuel efficiency.</p>
+          <p class="price">Starting from: ₹ 7.93 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="sedan" data-aos="fade-up">
+        <img src="images/city-hybrid.jpg" alt="City Hybrid" loading="lazy">
+        <h3>Honda City Hybrid</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Petrol Hybrid</p>
+            <p><strong>Mileage:</strong> 27.13 kmpl</p>
+            <p><strong>Power:</strong> 96.55 bhp (Engine), 107 bhp (Motor)</p>
+            <p><strong>Transmission:</strong> e-CVT</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+            <p>Experience the future with a self-charging electric hybrid, delivering exceptional fuel economy and smooth performance.</p>
+            <p class="price">Starting from: ₹ 19.04 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="models" class="models-section">
+    <h2 data-aos="fade-up">Our Latest Models</h2>
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search car models..." class="search-box" />
+      <select id="typeFilter">
+        <option value="">All Types</option>
+        <option value="suv">SUV</option>
+        <option value="sedan">Sedan</option>
+        <option value="hatchback">Hatchback</option>
+        <option value="luxury">Luxury</option>
+        <option value="mpv">MPV</option>
+      </select>
+      <select id="fuelFilter">
+        <option value="">All Fuel Types</option>
+        <option value="petrol">Petrol</option>
+        <option value="diesel">Diesel</option>
+        <option value="hybrid">Hybrid</option>
+        <option value="electric">Electric</option>
+      </select>
+    </div>
+    <div class="card-container" id="carList">
+      <div class="car-card" data-type="sedan" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/civic.jpg" alt="Civic" loading="lazy">
+        <h3>Honda Civic</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.8L Petrol</p>
+            <p><strong>Mileage:</strong> 16.5 kmpl</p>
+            <p><strong>Power:</strong> 139.46 bhp</p>
+            <p><strong>Transmission:</strong> Manual/CVT</p>
+            <p><strong>Seating:</strong> 5 Seater</p>
+            <p>A thrill on every road with its sporty and sleek design, advanced infotainment, and robust safety features.</p>
+            <p class="price">Starting from: ₹ 17.94 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="sedan" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/city.jpg" alt="City" loading="lazy">
+        <h3>Honda City</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L i-VTEC Petrol</p>
+            <p><strong>Mileage:</strong> 17.8 - 18.4 kmpl</p>
+            <p><strong>Power:</strong> 119.35 bhp</p>
+            <p><strong>Transmission:</strong> Manual/CVT</p>
+            <p><strong>Key Features:</strong> LaneWatch Camera, G-Con Structure</p>
+            <p>Premium comfort for your city life, featuring a spacious cabin and advanced connected car technology.</p>
+            <p class="price">Starting from: ₹ 11.82 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="hatchback" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/amaze.jpg" alt="Amaze" loading="lazy">
+        <h3>Honda Amaze</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.2L i-VTEC Petrol</p>
+            <p><strong>Mileage:</strong> 18.6 kmpl</p>
+            <p><strong>Power:</strong> 89 bhp</p>
+            <p><strong>Transmission:</strong> Manual/CVT</p>
+            <p><strong>Boot Space:</strong> 420 Liters</p>
+            <p>Compact with class. Amaze your journey with its fuel efficiency and comfortable ride quality.</p>
+            <p class="price">Starting from: ₹ 7.93 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/hr-v.jpg" alt="HR-V" loading="lazy">
+        <h3>Honda HR-V</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Petrol</p>
+            <p><strong>Mileage:</strong> 16-17 kmpl</p>
+            <p><strong>Power:</strong> 119 bhp</p>
+            <p><strong>Transmission:</strong> CVT</p>
+            <p><strong>Safety:</strong> Honda Sensing Suite</p>
+            <p>Global compact SUV sensation, known for its versatile 'Magic Seats' and sleek coupe-like design.</p>
+            <p class="price">Starting from: ₹ 14.50 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/wr-v.jpg" alt="WR-V" loading="lazy">
+        <h3>Honda WR-V</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.2L Petrol</p>
+            <p><strong>Mileage:</strong> 16.5 kmpl</p>
+            <p><strong>Power:</strong> 89 bhp</p>
+            <p><strong>Transmission:</strong> Manual</p>
+            <p><strong>Ground Clearance:</strong> 188mm</p>
+            <p>A bold crossover that stands out, offering impressive road presence and practical features for urban adventures.</p>
+            <p class="price">Starting from: ₹ 9.11 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/br-v.jpg" alt="BR-V" loading="lazy">
+        <h3>Honda BR-V</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Petrol</p>
+            <p><strong>Mileage:</strong> 15.4 kmpl</p>
+            <p><strong>Power:</strong> 117 bhp</p>
+            <p><strong>Transmission:</strong> Manual/CVT</p>
+            <p><strong>Seating:</strong> 7 Seater</p>
+            <p>Practical 7-seater SUV with flair, perfect for large families seeking comfort and versatility.</p>
+            <p class="price">Starting from: ₹ 10.50 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="luxury" data-fuel="hybrid" data-aos="fade-up">
+        <img src="images/accord.jpg" alt="Accord" loading="lazy">
+        <h3>Honda Accord Hybrid</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 2.0L Petrol Hybrid</p>
+            <p><strong>Mileage:</strong> 23.1 kmpl</p>
+            <p><strong>Power:</strong> 143 bhp (Engine), 181 bhp (Motor)</p>
+            <p><strong>Transmission:</strong> e-CVT</p>
+            <p><strong>Key Features:</strong> Advanced Sensing, Premium Interiors</p>
+            <p>Luxury redefined with cutting-edge innovation, offering a sophisticated driving experience and superior efficiency.</p>
+            <p class="price">Starting from: ₹ 44.50 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/elevate.jpg" alt="Elevate" loading="lazy">
+        <h3>Honda Elevate</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L i-VTEC Petrol</p>
+            <p><strong>Mileage:</strong> 15.31 - 16.92 kmpl</p>
+            <p><strong>Power:</strong> 119 bhp</p>
+            <p><strong>Transmission:</strong> Manual/CVT</p>
+            <p><strong>Key Features:</strong> Electric Sunroof, Wireless Charger</p>
+            <p>Next-gen SUV with futuristic features, spacious interior, and a dominant road presence.</p>
+            <p class="price">Starting from: ₹ 11.58 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/cr-v.jpg" alt="CR-V" loading="lazy">
+        <h3>Honda CR-V</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 2.0L Petrol</p>
+            <p><strong>Mileage:</strong> 14.4 kmpl</p>
+            <p><strong>Power:</strong> 152 bhp</p>
+            <p><strong>Transmission:</strong> CVT</p>
+            <p><strong>Safety:</strong> 6 Airbags, ABS with EBD</p>
+            <p>Robust performance meets luxury design in this popular SUV, known for its comfortable ride and premium cabin.</p>
+            <p class="price">Starting from: ₹ 29.50 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="hatchback" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/jazz.jpg" alt="Jazz" loading="lazy">
+        <h3>Honda Jazz</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.2L Petrol</p>
+            <p><strong>Mileage:</strong> 16.6 kmpl</p>
+            <p><strong>Power:</strong> 89 bhp</p>
+            <p><strong>Transmission:</strong> Manual/CVT</p>
+            <p><strong>Versatility:</strong> Magic Seats</p>
+            <p>Spacious, stylish, and full of energy, the Jazz offers uncompromised practicality and a fun driving experience.</p>
+            <p class="price">Starting from: ₹ 8.50 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="sedan" data-fuel="hybrid" data-aos="fade-up">
+        <img src="images/city-hybrid.jpg" alt="City Hybrid" loading="lazy">
+        <h3>Honda City Hybrid</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Petrol Hybrid</p>
+            <p><strong>Mileage:</strong> 27.13 kmpl</p>
+            <p><strong>Power:</strong> 96.55 bhp (Engine), 107 bhp (Motor)</p>
+            <p><strong>Transmission:</strong> e-CVT</p>
+            <p><strong>Fuel Type:</strong> Petrol + Electric</p>
+            <p>Experience the future with a self-charging electric hybrid, delivering exceptional fuel economy and smooth performance.</p>
+            <p class="price">Starting from: ₹ 19.04 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="hatchback" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/brio.jpg" alt="Brio" loading="lazy">
+        <h3>Honda Brio</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.2L Petrol</p>
+            <p><strong>Mileage:</strong> 18.5 kmpl</p>
+            <p><strong>Power:</strong> 87 bhp</p>
+            <p><strong>Transmission:</strong> Manual/Automatic</p>
+            <p><strong>Compact Size:</strong> Easy to maneuver</p>
+            <p>A fun and agile hatchback, perfect for city driving with its peppy engine and compact dimensions.</p>
+            <p class="price">Starting from: ₹ 5.50 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="mpv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/mobilio.jpg" alt="Mobilio" loading="lazy">
+        <h3>Honda Mobilio</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Petrol</p>
+            <p><strong>Mileage:</strong> 17.3 kmpl</p>
+            <p><strong>Power:</strong> 117 bhp</p>
+            <p><strong>Transmission:</strong> Manual</p>
+            <p><strong>Seating:</strong> 7 Seater</p>
+            <p>A stylish and spacious MPV for the entire family, offering comfort and practicality for long journeys.</p>
+            <p class="price">Starting from: ₹ 8.70 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/passport.jpg" alt="passport" loading="lazy"> <h3>Honda Passport</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 3.5L V6 Petrol</p>
+            <p><strong>Mileage:</strong> 9-10 kmpl (Approx)</p>
+            <p><strong>Power:</strong> 280 bhp</p>
+            <p><strong>Transmission:</strong> 9-speed Automatic</p>
+            <p><strong>Off-road:</strong> i-VTM4 AWD System</p>
+            <p>A rugged yet refined SUV, ready for any adventure with its powerful engine and advanced all-wheel-drive capabilities.</p>
+            <p class="price">Starting from: ₹ 35.00 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="suv" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/pilot.jpg" alt="Pilot" loading="lazy"> <h3>Honda Pilot</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 3.5L V6 Petrol</p>
+            <p><strong>Mileage:</strong> 8-9 kmpl (Approx)</p>
+            <p><strong>Power:</strong> 280 bhp</p>
+            <p><strong>Transmission:</strong> 9-speed Automatic</p>
+            <p><strong>Seating:</strong> 8 Seater</p>
+            <p>A spacious and family-friendly SUV, offering comfortable seating for eight and a host of safety features.</p>
+            <p class="price">Starting from: ₹ 40.00 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+       <div class="car-card" data-type="luxury" data-fuel="electric" data-aos="fade-up">
+        <img src="images/e.ny1.jpg" alt="e:Ny1" loading="lazy"> <h3>Honda e:Ny1</h3>
+        <div class="car-details">
+            <p><strong>Motor:</strong> Electric Motor</p>
+            <p><strong>Range:</strong> ~412 km (WLTP)</p>
+            <p><strong>Power:</strong> 204 PS</p>
+            <p><strong>Battery:</strong> 68.8 kWh</p>
+            <p><strong>Charging:</strong> DC Fast Charging Compatible</p>
+            <p>Experience pure electric driving with this stylish and efficient SUV, offering a smooth ride and sustainable performance.</p>
+            <p class="price">Starting from: ₹ 30.00 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="sedan" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/integra.jpg" alt="Integra" loading="lazy"> <h3>Honda Integra</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Turbo Petrol</p>
+            <p><strong>Mileage:</strong> 15-16 kmpl (Approx)</p>
+            <p><strong>Power:</strong> 200 hp</p>
+            <p><strong>Transmission:</strong> CVT/6-speed Manual</p>
+            <p><strong>Style:</strong> Sporty & Dynamic</p>
+            <p>A modern take on a classic, the Integra combines performance, style, and advanced technology for an engaging drive.</p>
+            <p class="price">Starting from: ₹ 28.00 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+      <div class="car-card" data-type="hatchback" data-fuel="petrol" data-aos="fade-up">
+        <img src="images/fit.jpg" alt="Fit" loading="lazy"> <h3>Honda Fit</h3>
+        <div class="car-details">
+            <p><strong>Engine:</strong> 1.5L Petrol</p>
+            <p><strong>Mileage:</strong> 18-20 kmpl (Approx)</p>
+            <p><strong>Power:</strong> 120 hp</p>
+            <p><strong>Transmission:</strong> CVT/Manual</p>
+            <p><strong>Versatility:</strong> Ultra-seat Configuration</p>
+            <p>Compact yet incredibly spacious, the Honda Fit (or Jazz in some markets) is renowned for its versatile interior and fuel efficiency.</p>
+            <p class="price">Starting from: ₹ 9.00 Lakh*</p>
+        </div>
+        <button class="details-btn">Details</button>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" class="why-us-section">
+      <h2 data-aos="fade-up">Why Choose Us?</h2>
+      <div class="why-us-container">
+          <div class="why-us-item" data-aos="fade-up">
+              <h3>Expert Staff</h3>
+              <p>Our team comprises highly trained and knowledgeable professionals passionate about Honda vehicles. They are dedicated to understanding your unique needs and guiding you through every step of the car-buying journey, ensuring a personalized and satisfying experience.</p>
+          </div>
+          <div class="why-us-item" data-aos="fade-up">
+              <h3>Wide Selection</h3>
+              <p>We pride ourselves on offering an extensive inventory of both new and certified pre-owned Honda vehicles. From the latest sedans and SUVs to eco-friendly hybrids, you'll find a diverse range of models and trims to perfectly match your lifestyle and budget.</p>
+          </div>
+          <div class="why-us-item" data-aos="fade-up">
+              <h3>Customer Service</h3>
+              <p>Our commitment to you extends far beyond the sale. We provide unparalleled after-sales support, including state-of-the-art service centers staffed by certified technicians, genuine Honda parts, and a dedicated customer care team ready to assist you.</p>
+          </div>
+          <div class="why-us-item" data-aos="fade-up">
+              <h3>Transparent Pricing</h3>
+              <p>We believe in honest and straightforward transactions. Our pricing is transparent with no hidden fees, ensuring you get the best value for your investment.</p>
+          </div>
+          <div class="why-us-item" data-aos="fade-up">
+              <h3>Convenient Location</h3>
+              <p>Easily accessible in the heart of the city, our showroom offers a comfortable and welcoming environment for you to explore our vehicles.</p>
+          </div>
+      </div>
+  </section>
+
+  <section id="testimonials" class="testimonials-section">
+    <h2 data-aos="fade-up">What Our Customers Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial" data-aos="fade-up">
+        <p>"The best car buying experience I've ever had. The staff was friendly and helpful, and I got a great deal on my new Honda City. Highly recommend!"</p>
+        <h4>- John Doe, Honda City Owner</h4>
+      </div>
+      <div class="testimonial" data-aos="fade-up">
+        <p>"I absolutely love my new Honda Elevate! It's the perfect car for me and my family, spacious and powerful. Thanks to the team for all their help and seamless delivery!"</p>
+        <h4>- Jane Smith, Honda Elevate Owner</h4>
+      </div>
+      <div class="testimonial" data-aos="fade-up">
+        <p>"A truly great place to buy a car. The finance team made the process so easy and understandable. I would recommend them to anyone looking for a reliable Honda."</p>
+        <h4>- Peter Jones, Honda Amaze Owner</h4>
+      </div>
+      <div class="testimonial" data-aos="fade-up">
+        <p>"Outstanding service from start to finish. They went above and beyond to ensure I was satisfied with my Honda Civic purchase. Exceptional customer care!"</p>
+        <h4>- Emily White, Honda Civic Owner</h4>
+      </div>
+      <div class="testimonial" data-aos="fade-up">
+        <p>"Impressed with their wide range of models and the in-depth knowledge of the sales staff. My new Honda City Hybrid is a dream to drive and incredibly fuel-efficient."</p>
+        <h4>- David Green, Honda City Hybrid Owner</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-padded">
+      <h2 data-aos="fade-right">Service & Parts</h2>
+      <div class="service-grid">
+          <div class="service-item" data-aos="fade-up">
+              <h3>Scheduled Maintenance</h3>
+              <p>Keep your Honda running smoothly with our expert scheduled maintenance services, performed by certified technicians using genuine parts.</p>
+          </div>
+          <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+              <h3>Genuine Honda Parts</h3>
+              <p>We use only authentic Honda parts and accessories, ensuring optimal performance, safety, and longevity for your vehicle.</p>
+          </div>
+          <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+              <h3>Body Shop & Repairs</h3>
+              <p>From minor dents to major collision repairs, our state-of-the-art body shop is equipped to restore your Honda to its pristine condition.</p>
+          </div>
+          <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+              <h3>Express Service</h3>
+              <p>Get quick and efficient service for routine checks and minor repairs without compromising on quality or expertise.</p>
+          </div>
+      </div>
+      <div class="text-center mt-3">
+          <a href="#" class="btn">Book Service Now</a>
+      </div>
+  </section>
+
+  <section id="finance" class="section-padded bg-light">
+      <h2 data-aos="fade-left">Finance Options</h2>
+      <p class="section-desc" data-aos="fade-right">We offer flexible financing solutions tailored to your needs, making your dream Honda more accessible than ever.</p>
+      <div class="finance-options-container">
+          <div class="finance-item" data-aos="fade-up">
+              <h3>Car Loans</h3>
+              <p>Competitive interest rates and flexible repayment tenures for new and pre-owned car loans.</p>
+          </div>
+          <div class="finance-item" data-aos="fade-up" data-aos-delay="100">
+              <h3>Leasing Programs</h3>
+              <p>Explore our attractive leasing options for individuals and businesses, offering lower monthly payments.</p>
+          </div>
+          <div class="finance-item" data-aos="fade-up" data-aos-delay="200">
+              <h3>Trade-in Assistance</h3>
+              <p>Get the best value for your current vehicle when you trade it in for a new Honda.</p>
+          </div>
+      </div>
+      <form class="finance-form" data-aos="fade-up">
+        <h3>Get Pre-Approved</h3>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Your Phone" required />
+        <select name="car_interest">
+            <option value="">Interested Car Model</option>
+            <option value="City">Honda City</option>
+            <option value="Elevate">Honda Elevate</option>
+            <option value="Amaze">Honda Amaze</option>
+            <option value="City Hybrid">Honda City Hybrid</option>
+            <option value="CR-V">Honda CR-V</option>
+            </select>
+        <button type="submit" class="btn">Apply for Pre-Approval</button>
+      </form>
+  </section>
+
+  <section id="offers" class="section-padded">
+      <h2 data-aos="fade-right">Special Offers & Promotions</h2>
+      <div class="offer-container">
+          <div class="offer-card" data-aos="zoom-in">
+              <h3>Monsoon Savings Event</h3>
+              <p>Get exclusive discounts and benefits on selected models this monsoon season. Limited period offer!</p>
+              <p class="offer-code">Code: MONSOON2025</p>
+              <a href="#" class="btn btn-small">View Details</a>
+          </div>
+          <div class="offer-card" data-aos="zoom-in" data-aos-delay="100">
+              <h3>Low EMI Options</h3>
+              <p>Drive home your favorite Honda with attractive low EMI schemes and flexible finance plans.</p>
+              <p class="offer-code">Valid till: Jul 31, 2025</p>
+              <a href="#" class="btn btn-small">Enquire Now</a>
+          </div>
+          <div class="offer-card" data-aos="zoom-in" data-aos-delay="200">
+              <h3>Free Accessories Pack</h3>
+              <p>Receive a complimentary accessories pack worth ₹15,000 with every Honda Elevate booking this month.</p>
+              <p class="offer-code">Condition: Elevate Bookings</p>
+              <a href="#" class="btn btn-small">Claim Offer</a>
+          </div>
+      </div>
+  </section>
+
+  <section id="blog" class="section-padded bg-light">
+      <h2 data-aos="fade-left">Latest from Our Blog</h2>
+      <div class="blog-grid">
+          <div class="blog-post-card" data-aos="fade-up">
+              <img src="images/blog-1.jpg" alt="Future of EVs" loading="lazy">
+              <h3>The Future of Electric Vehicles: Honda's Vision</h3>
+              <p>Discover how Honda is innovating to lead the electric vehicle revolution with advanced battery technology and sustainable mobility solutions.</p>
+              <a href="#" class="btn btn-small">Read More</a>
+          </div>
+          <div class="blog-post-card" data-aos="fade-up" data-aos-delay="100">
+              <img src="images/blog-2.jpg" alt="Car Maintenance Tips" loading="lazy">
+              <h3>Top 5 Tips for Monsoon Car Care</h3>
+              <p>Ensure your Honda is monsoon-ready with our essential car care tips, from tire checks to wiper blade maintenance.</p>
+              <a href="#" class="btn btn-small">Read More</a>
+          </div>
+          <div class="blog-post-card" data-aos="fade-up" data-aos-delay="200">
+              <img src="images/blog-3.jpg" alt="New Elevate Launch" loading="lazy">
+              <h3>Honda Elevate Launched: All You Need to Know</h3>
+              <p>A deep dive into the features, specifications, and variants of the much-anticipated Honda Elevate SUV, now available in showrooms.</p>
+              <a href="#" class="btn btn-small">Read More</a>
+          </div>
+      </div>
+      <div class="text-center mt-3">
+          <a href="#" class="btn">View All Articles</a>
+      </div>
+  </section>
+
+  <section id="about">
+    <h2 data-aos="fade-right">About Honda</h2>
+    <p data-aos="fade-left">
+      Honda is a global leader in mobility, dedicated to developing and manufacturing a wide range of products, from automobiles and motorcycles to power equipment and robotics. Founded in 1948 by Soichiro Honda, the company has consistently pushed the boundaries of engineering and design, driven by a philosophy of "The Power of Dreams." Our commitment extends beyond just vehicles; we strive to create advanced technologies that improve people's lives and contribute to a sustainable society. We are proud of our heritage of innovation, reliability, and delivering joy to millions of customers worldwide.
+    </p>
+    <p data-aos="fade-up" data-aos-delay="100">
+      At our showroom, we uphold Honda's core values, offering not just exceptional vehicles but also a customer experience that reflects the brand's excellence. We aim to be your trusted partner for all your automotive needs.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2 data-aos="zoom-in">Contact Us</h2>
+    <div class="contact-grid">
+      <form id="contactForm" data-aos="fade-right">
+        <h3>Send us a message</h3>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info" data-aos="fade-left">
+        <h3>Showroom Details</h3>
+        <p><i class="fas fa-map-marker-alt"></i> **Address:** 123 Honda Drive, Auto City, Noida, Uttar Pradesh 201301, India</p>
+        <p><i class="fas fa-phone"></i> **Sales:** +91 12345 67890</p>
+        <p><i class="fas fa-phone"></i> **Service:** +91 12345 67891</p>
+        <p><i class="fas fa-envelope"></i> **Email:** <a href="mailto:info@hondashowroom.com">info@hondashowroom.com</a></p>
+        <p><i class="fas fa-clock"></i> **Operating Hours:**</p>
+        <ul>
+          <li>Monday - Saturday: 9:00 AM - 7:00 PM</li>
+          <li>Sunday: 10:00 AM - 5:00 PM</li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="map-embed">
+            <h3>Find Us on Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.502901178619!2d77.3879207!3d28.6139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5f4b8f0a0d9%3A0xc3f0b0a8f9c0c0e!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#finance">Finance</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Honda Drive, Noida, India</p>
+            <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+            <p><i class="fas fa-envelope"></i> info@hondashowroom.com</p>
+        </div>
+    </div>
+    <p class="copyright-text">© 2025 Honda Showroom. All rights reserved. Designed by You.</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h2 id="modalTitle">Car Name</h2>
+      <img id="modalImage" src="" alt="">
+      <div id="modalDesc"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
